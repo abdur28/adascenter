@@ -73,9 +73,17 @@ const advantages = [
 ];
 
 export const metadata = {
-  title: "О системе ADAS — ADAS ЦЕНТР",
+  title: "О системе ADAS",
   description:
-    "Что такое ADAS, как работают системы помощи водителю и зачем нужна калибровка",
+    "Что такое ADAS, как работают системы помощи водителю и зачем нужна калибровка камер, радаров и LiDAR после замены стекла или ДТП.",
+  openGraph: {
+    title: "О системе ADAS — ADAS ЦЕНТР",
+    description:
+      "Что такое ADAS, как работают системы помощи водителю и зачем нужна калибровка",
+  },
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

@@ -23,18 +23,59 @@ const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
 });
 
+const SITE_URL = "https://adascenter.ru";
+const SITE_NAME = "ADAS ЦЕНТР";
+const SITE_DESCRIPTION =
+  "Профессиональная мобильная калибровка ADAS: камеры, радары, датчики. Выезд в ваш автосервис по Москве и МО. Современное оборудование, официальный отчёт.";
+
 export const metadata: Metadata = {
-  title: "ADAS ЦЕНТР — Выездная калибровка систем помощи водителю",
-  description:
-    "Профессиональная мобильная калибровка ADAS: камеры, радары, датчики. Выезд в ваш автосервис. Работаем с современным оборудованием, выдаём официальный отчёт.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "ADAS ЦЕНТР — Выездная калибровка систем помощи водителю",
+    template: "%s | ADAS ЦЕНТР",
+  },
+  description: SITE_DESCRIPTION,
   keywords: [
     "ADAS калибровка",
     "калибровка камер",
     "калибровка радаров",
+    "калибровка LiDAR",
     "выездная калибровка",
     "ADAS ЦЕНТР",
     "калибровка датчиков",
+    "калибровка ADAS Москва",
+    "диагностика ADAS",
+    "замена лобового стекла калибровка",
   ],
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: "ADAS ЦЕНТР — Выездная калибровка систем помощи водителю",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ADAS ЦЕНТР — Выездная калибровка систем помощи водителю",
+    description: SITE_DESCRIPTION,
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({

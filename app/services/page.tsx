@@ -6,9 +6,17 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { services } from "@/lib/services";
 
 export const metadata = {
-  title: "Услуги — ADAS ЦЕНТР",
+  title: "Услуги",
   description:
-    "Калибровка камер, радаров, LiDAR и полная диагностика ADAS систем",
+    "Калибровка камер, радаров, LiDAR и полная диагностика ADAS систем. Выездной сервис по Москве и МО.",
+  openGraph: {
+    title: "Услуги — ADAS ЦЕНТР",
+    description:
+      "Калибровка камер, радаров, LiDAR и полная диагностика ADAS систем",
+  },
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 export default function ServicesPage() {

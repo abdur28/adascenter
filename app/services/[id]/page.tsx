@@ -27,8 +27,16 @@ export async function generateMetadata({
   const service = getService(id);
   if (!service) return { title: "Услуга не найдена" };
   return {
-    title: `${service.name} — ADAS ЦЕНТР`,
+    title: service.name,
     description: service.shortDesc,
+    openGraph: {
+      title: `${service.name} — ADAS ЦЕНТР`,
+      description: service.shortDesc,
+      images: [{ url: service.image, width: 1200, height: 630, alt: service.name }],
+    },
+    alternates: {
+      canonical: `/services/${id}`,
+    },
   };
 }
 
@@ -219,7 +227,7 @@ export default async function ServicePage({
                 Записаться на калибровку
               </a>
               <a
-                href="tel:+79001234567"
+                href="tel:+79160999738"
                 className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-6 py-3 font-heading text-sm font-semibold text-white/50 transition-all hover:border-white/20 hover:text-white/70"
               >
                 <Phone size={14} />

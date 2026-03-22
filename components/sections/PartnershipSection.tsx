@@ -19,8 +19,8 @@ export default function PartnershipSection() {
         <div className="grid gap-12 lg:grid-cols-2">
           {/* Left — sticky image (desktop) */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
@@ -44,8 +44,8 @@ export default function PartnershipSection() {
 
           {/* Right — copy */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="space-y-6 lg:py-12"

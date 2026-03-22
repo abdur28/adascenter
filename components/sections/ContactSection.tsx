@@ -164,10 +164,10 @@ export default function ContactSection() {
                     Телефон
                   </p>
                   <a
-                    href="tel:+79001234567"
+                    href="tel:+79160999738"
                     className="text-sm text-white/50 transition-colors hover:text-primary"
                   >
-                    +7 (900) 123-45-67
+                    +7 (916) 099-97-38
                   </a>
                 </div>
               </div>

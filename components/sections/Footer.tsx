@@ -32,7 +32,7 @@ const navColumns = [
 ];
 
 const contacts = [
-  { icon: Phone, text: "+7 (900) 123-45-67", href: "tel:+79001234567" },
+  { icon: Phone, text: "+7 (916) 099-97-38", href: "tel:+79160999738" },
   {
     icon: Mail,
     text: "adasmsk@mail.ru",
