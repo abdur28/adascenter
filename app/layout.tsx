@@ -47,7 +47,7 @@ export default function RootLayout({
       lang="ru"
       className={`${orbitron.variable} ${exo2.variable} ${ibmPlexSans.variable}`}
     >
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className="min-h-screen overflow-x-hidden bg-background text-foreground antialiased">
         {children}
       </body>
     </html>
