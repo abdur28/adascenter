@@ -1,0 +1,12 @@
+meta:
+  environment: nodejs
+  toolchain:
+    name: npm
+    version: 20
+build:
+  type: nodejs
+  buildSteps:
+    - npm install
+    - npm run build
+run:
+  command: npm start
