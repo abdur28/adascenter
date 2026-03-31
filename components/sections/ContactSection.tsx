@@ -182,10 +182,10 @@ export default function ContactSection() {
                     Электронная почта
                   </p>
                   <a
-                    href="mailto:adasmsk@mail.ru"
+                    href="mailto:adasrus@mail.ru"
                     className="text-sm text-white/50 transition-colors hover:text-primary"
                   >
-                    adasmsk@mail.ru
+                    adasrus@mail.ru
                   </a>
                 </div>
               </div>

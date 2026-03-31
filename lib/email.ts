@@ -66,7 +66,7 @@ function buildHtml(title: string, body: string): string {
                 ADAS ЦЕНТР — Москва и Московская область
               </p>
               <p style="margin:4px 0 0; font-size:11px; color:#999;">
-                adasmsk@mail.ru
+                adasrus@mail.ru
               </p>
             </td>
           </tr>
@@ -115,7 +115,7 @@ export async function sendContactFormEmail(data: {
   try {
     await transporter.sendMail({
       from: `"ADAS ЦЕНТР" <${process.env.EMAIL_USER}>`,
-      to: "adasmsk@mail.ru",
+      to: "adasrus@mail.ru",
       subject: `Новая заявка от ${data.name}`,
       html: buildHtml("Новая заявка с сайта", body),
     });

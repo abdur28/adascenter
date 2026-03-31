@@ -35,8 +35,8 @@ const contacts = [
   { icon: Phone, text: "+7 (916) 099-97-38", href: "tel:+79160999738" },
   {
     icon: Mail,
-    text: "adasmsk@mail.ru",
-    href: "mailto:adasmsk@mail.ru",
+    text: "adasrus@mail.ru",
+    href: "mailto:adasrus@mail.ru",
   },
   { icon: MapPin, text: "Москва, выездная калибровка", href: "/#contact" },
 ];

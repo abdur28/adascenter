@@ -16,7 +16,7 @@ const jsonLd = {
     "Профессиональная мобильная калибровка ADAS: камеры, радары, LiDAR. Выезд по Москве и Московской области.",
   url: "https://adascenter.ru",
   telephone: "+79160999738",
-  email: "adasmsk@mail.ru",
+  email: "adasrus@mail.ru",
   areaServed: {
     "@type": "GeoCircle",
     geoMidpoint: {
